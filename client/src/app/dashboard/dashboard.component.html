@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="vote">
+        <button (click)="updateVote(topic._id,1)"><h2>▲</h2></button>
+        <h3><span>{{topic.score}}</span></h3>
+        <button (click)="updateVote(topic._id,-1)" ><h2>▼</h2></button>
+    </div>
+    <h2>{{topic.title}}</h2>
+    <button (click)=" deleteTopic()"> 🗑️</button>
+
+</div>

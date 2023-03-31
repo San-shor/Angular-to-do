@@ -1,0 +1,10 @@
+<form [formGroup]="titleForm">
+    <input name="title" formControlName="title">
+    <button (click)="postTopic()">Add Task</button>
+  </form>
+
+  <div  class=" container"*ngFor="let topic of topic">
+
+   <app-dashboard [topic]="topic" (deleteEvent)="deleteTopic($event)"></app-dashboard>
+  </div>
+
